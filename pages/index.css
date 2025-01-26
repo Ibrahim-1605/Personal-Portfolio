@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+:root{
+    /* dark theme  */
+    --dark-header-bg: #2f2c54d3;
+    --glow-bg-color1: #0F0C29;
+    --glow-bg-color2: #302B63;
+    --glow-bg-color3: #24243E;  
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --span-color:#9a77c9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Acme", serif;
+    font-style: normal;
+    scroll-behavior: smooth;
+    color: var(--color-white);
+}
+body{
+    background:linear-gradient(120deg, var(--glow-bg-color1),var(--glow-bg-color2),var(--glow-bg-color3));
+}
+span{
+    color: var(--span-color);
+}
+.topic{
+    font-size: 3.5rem;
+    text-align: center;
+}
+section{
+    min-height: 100vh;
+}
+.header{
+    position: sticky;
+    top: 1.5rem;
+    padding: 1.5rem 0rem;
+    width: 75rem;
+    border-radius:20px;
+    background-color: var(--dark-header-bg);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+.headerh1{
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding-right: 10rem;
+}
+.nav{
+    display: flex;
+    gap: 2rem;
+}
+.nav div a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.nav div a:hover{
+    color: var(--span-color);
+    text-decoration: underline;
+}
+#home{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    border-radius: 5%;
+    height: 37rem;
+    width: 25.5rem;
+}
+.introName{
+    width: 35rem;
+}
+.introName h2{
+    padding-left: 1.5rem;
+    font-size: 3.5rem;
+}
+.introName p{
+    padding-left:1rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+.introName button{
+    background-color: var(--span-color);
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    border-radius: 7%;
+    border: 2px solid #9a77c9;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.3rem;
+    transition: all 1s;
+}
+.introName button:hover{
+    scale: 1.1;
+}
+/* styling for the about us page */
+#aboutUs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.5rem;
+}
+.image1 img{
+    border-radius: 5%;
+    height: 30rem;
+    width: 27rem;
+}
+.about p{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.about{
+    line-height: 2.4rem;
+    width: 45rem;
+}
+/* styling for the skills section */
+#skills{
+    padding-top: 7.8rem;
+}
+.skillsPage{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.skill{
+    width: 35rem;
+    border: 1px solid var(--span-color);
+    padding: 2rem;
+    height: 7rem;
+    border-radius: 6px;
+    background-color: var(--glow-bg-color3);
+}
+.skillItem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prgsBar{
+    font-size: 1rem;
+}
+/* styling for the communication page */
+#communication{
+    padding-top: 7rem;
+}
+#communication i{
+    color: var(--span-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.engSkills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.engSkillsItem{
+    background-color: var(--glow-bg-color3);
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid var(--span-color);
+}
+.lifeSkills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.lifeSkillsItem{
+    background-color: var(--glow-bg-color3);
+    padding: 2rem;
+    text-align: center;
+    width: 25rem;
+    border: 1px solid var(--span-color);
+}
+.communication{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem 0rem 1.5rem 0rem;
+}
+/* styling for the my projects page */
+#projects h1{
+    padding-top: 7rem;
+}
+.projectsItem{
+    padding: 1rem;
+    width: 25rem;
+    border-radius: 7px;
+    border: 1px solid var(--span-color);
+    background-color: var(--glow-bg-color3);
+}
+#projects .projectsItem h1{
+    text-align: center;
+    padding-top:1rem;
+    font-size: 3.5rem;
+}
+.projectsItem p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.projectsItem img{
+    width: 23rem;
+    border-radius: 7px;
+}
+.projects{
+    padding-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+/* styling for the contact page */
+#contact h1{
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+}
+/* styling for the form */
+form {
+    margin: 0px auto;
+    background-color: var(--glow-bg-color3);
+    width: 35rem;
+    padding: 30px;
+    line-height: 1.5rem;
+    border: 1px solid var(--span-color);
+    border-radius: 15px;
+}
+input, textarea {
+    background-color: transparent;
+    color: #f2f3f4;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--span-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#contact .input-box input{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+textarea {
+    resize: vertical;
+    margin-top: 2rem;
+    min-height: 150px;
+}
+#contact button{
+    margin-top: 1.3rem;
+    background-color: var(--span-color);
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #9a77c9;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.3rem;
+    transition: all 1s;
+}
+#contact button:hover{
+    box-shadow: 3px 3px 3px;
+}
