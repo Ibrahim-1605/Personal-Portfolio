@@ -11,16 +11,16 @@
 </head>
 <body class="container">
     <header class="header">
-        <div><h1 class="headerh1">Ibrahim</h1></div>
+        <div><h1 class="headerh1">Ibrahim<span>'</span>s <span>Portfolio</span></h1></div>
         <nav class="nav">
-            <div><a href="#home">Home</a></div>
-            <div><a href="#aboutUs">About Me</a></div>
-            <div><a href="#skills">Skills</a></div>
-            <div><a href="#communication">Communication</a></div>
-            <div><a href="#projects">Projects</a></div>
-            <div><a href="#contact">Contact</a></div>
+            <div class="navigation"><a href="#home">Home</a></div>
+            <div class="navigation"><a href="#aboutUs">About Me</a></div>
+            <div class="navigation"><a href="#skills">Skills</a></div>
+            <div class="navigation"><a href="#communication">Communication</a></div>
+            <div class="navigation"><a href="#projects">Projects</a></div>
+            <div class="navigation"><a href="#contact">Contact</a></div>
         </nav>
-        <!-- <div><i class="fa-solid fa-moon"></i></div> -->
+        <div><i class="fa-solid fa-moon"></i></div>
     </header>
     <main>
         <section id="home">
@@ -28,7 +28,18 @@
                 <h2>Hello,</h2>
                 <h1 class="topic">I am <span>Mohamed Ibrahim</span></h1>
                 <p>Welcome to my portfolio website. I am fresher and also aspiring to become a Data Analyst</p>
-                <a href="#contact"><button>Contact Me</button></a>
+                <div class="readMore">
+                    <div>
+                        <a href="#aboutUs">
+                            <div>Read more</div>
+                        </a>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/Ibrahim-1605" target="_blank">
+                            <div>Git hub</div>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="image">
                 <img src="./assets/images/Ibrahim's_image.jpeg" alt="Ibrahim's image"/>
@@ -219,21 +230,21 @@
             <h1 class="topic"><span>My</span> Projects</h1>
             <div class="projects">
                 <div class="projectsItem">
-                    <a href="https://ibrahim-1605.github.io/Md-Ibrahim-Portfolio/" >
+                    <a href="https://ibrahim-1605.github.io/Md-Ibrahim-Portfolio/"  target="_blank">
                         <img src="./assets/images/personal_portfolio_image_1.png" alt="project-Image-1"/>
                     </a>
                     <h1><span>01</span></h1>
                     <p>It is my sample Portfolio website</p>
                 </div>
                 <div class="projectsItem">
-                    <a href="https://constructzone.netlify.app/" >
+                    <a href="https://constructzone.netlify.app/"  target="_blank">
                         <img src="./assets/images/construct_zone_image_2.png" alt="project-Image-2"/>
                     </a>
                     <h1><span>02</span></h1>
                     <p>It is the E-commerce website for the constructional products.</p>
                 </div>
                 <div class="projectsItem">
-                    <a href="https://ibrahim-1605.github.io/Random-Thirukural/" >
+                    <a href="https://ibrahim-1605.github.io/Random-Thirukural/"  target="_blank">
                         <img src="./assets/images/random_thirukural_3.png" alt="project-Image-3"/>
                     </a>
                     <h1><span>03</span></h1>
@@ -243,17 +254,91 @@
         </section>
         <section id="contact">
             <h1 class="topic">Contact <span>Me</span></h1>
-            <form action="">
-                <div class="input-box">
-                    <h2>Email <span>Me</span></h2>
-                    <input type="text" placeholder="Full Name" required />
-                    <input type="Email" placeholder="Email" required />
-                    <input type="text" placeholder="subject" required />
+            <div class="contactDiv">
+                <div class="textContact">
+                    <div class="emailNum">
+                        <div><i class="fa-solid fa-envelope"></i></div>
+                        <div><h3>mdibrahimzeenath1422@gmail.com</h3></div>
+                    </div>
+                    <div class="emailNum">  
+                        <div><i class="fa-solid fa-phone"></i></div>
+                        <div><h3>+91 9843503076</h3></div>
+                    </div>
+                    <div class="socialContact">
+                        <h2>Social Contact</h2>
+                        <ul>
+                            <li>
+                                <a href="wa.me/+919843503076    " target="_blank">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span><i class="fa-brands fa-whatsapp"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span><i class="fa-brands fa-instagram"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Ibrahim-1605" target="_blank">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span><i class="fa-brands fa-github"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span><i class="fa-brands fa-linkedin"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <textarea name="message" id="" cols="20" rows="5" placeholder="Your Message"></textarea>
-                <a href="#home"><button>Send</button></a>
-            </form>
+                <div class="contactForm">
+                    <form action="">
+                        <h2>Email <span>Me</span></h2>
+                        <div class="form-floating mb-2 mt-2 ">
+                            <input type="text" class="form-control" id="name" placeholder="Enter the Name" name="name"/>
+                            <label for="name">Name</label>
+                        </div>
+                        <div id="nameError"></div>
+                        <div class="form-floating mb-2 mt-2">
+                            <input type="email" class="form-control" id="name" placeholder="Enter the Email" name="email"/>
+                            <label for="email">Email</label>
+                        </div>
+                        <div id="emailError"></div>
+                        <div class="form-floating mb-2 mt-2">
+                            <input type="text" class="form-control" id="subject" placeholder="Enter the Subject." name="subject"/>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div id="subjectError"></div>
+                        <div class="form-floating mb-2 mt-2">
+                            <textarea class="form-control " rows="10" style="height: 100%;" id="message" name="message" placeholder="Enter the message"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <div id="messageError"></div>
+                        <div>
+                            <button class="button">Submit</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <p>&copy; Ibrahim, All Rights are reserved.</p>
+    </footer>
 </body>
 </html>
