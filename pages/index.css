@@ -263,10 +263,15 @@ section {
     padding-top: 7rem;
 }
 
-#communication i {
+#communication .values {
     color: var(--span-color);
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.star i{
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -301,7 +306,7 @@ section {
 
 .lifeSkillsItem {
     background-color: var(--glow-bg-color3);
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
     border-radius: 6px;
     width: 25rem;
@@ -458,7 +463,7 @@ form h2 {
 /* styling and adding animation for the social media contact links */
 .socialContact {
     align-items: end;
-    background-color: var(--glow-bg-color1);
+    background-color: var(--glow-bg-color3);
     justify-content: end;
     margin-top: 8rem;
     padding: 1rem 3rem 1rem 2rem;
@@ -516,7 +521,7 @@ form h2 {
     width: 100%;
     height: 100%;
     display: flex !important;
-    background: var(--glow-bg-color3);
+    background: var(--glow-bg-color2);
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -558,19 +563,19 @@ form h2 {
 }
 
 .socialContact ul li:nth-child(1):hover span {
-    background: var(--glow-bg-color3) !important;
+    background: var(--glow-bg-color2) !important;
 }
 
 .socialContact ul li:nth-child(2):hover span {
-    background: var(--glow-bg-color3) !important;
+    background: var(--glow-bg-color2) !important;
 }
 
 .socialContact ul li:nth-child(3):hover span {
-    background: var(--glow-bg-color3) !important;
+    background: var(--glow-bg-color2) !important;
 }
 
 .socialContact ul li:nth-child(4):hover span {
-    background: var(--glow-bg-color3) !important;
+    background: var(--glow-bg-color2) !important;
 }
 
 footer {
