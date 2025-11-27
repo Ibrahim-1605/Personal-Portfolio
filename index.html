@@ -9,57 +9,91 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body class="container">
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+            <script type="text/javascript">
+              (function() {
+              emailjs.init("1sUb2ZuuBiksIL1mc");
+              })(); 
+              </script>
+<body class="container-fluid">
     <header class="header">
-        <div><h1 class="headerh1">Ibrahim<span>'</span>s <span>Portfolio</span></h1></div>
-        <nav class="nav">
-            <div class="navigation"><a href="#home">Home</a></div>
-            <div class="navigation"><a href="#aboutUs">About Me</a></div>
-            <div class="navigation"><a href="#skills">Skills</a></div>
-            <div class="navigation"><a href="#communication">Communication</a></div>
-            <div class="navigation"><a href="#projects">Projects</a></div>
-            <div class="navigation"><a href="#contact">Contact</a></div>
+        <div>
+            <h1 class="headerh1">Ibrahim<span>'</span>s <span>Portfolio</span></h1>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><div class="navigation"><a href="#home">Home</a></div></li>
+                <li><div class="navigation"><a href="#aboutUs">About Me</a></div></li>
+                <li><div class="navigation"><a href="#skills">Skills</a></div></li>
+                <li><div class="navigation"><a href="#communication">Other skills</a></div></li>
+                <li><div class="navigation"><a href="#projects">Projects</a></div></li>
+                <li><div class="navigation"><a href="#contact">Contact</a></div></li>
+            </ul>
         </nav>
-        <!-- <div><i class="fa-solid fa-moon"></i></div> -->
     </header>
+    
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-nav">
+            <a href="#home" onclick="closeMobileMenu()">Home</a>
+            <a href="#aboutUs" onclick="closeMobileMenu()">About Me</a>
+            <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+            <a href="#communication" onclick="closeMobileMenu()">Communication</a>
+            <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+            <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+        </div>
+    </div>
+
     <main>
         <section id="home">
-            <div class="introName">
-                <h2>Hello,</h2>
-                <h1 class="topic">I am <span>Mohamed Ibrahim</span></h1>
-                <p>Welcome to my portfolio website. I am fresher and also aspiring to become a Data Analyst</p>
-                <div class="readMore">
-                    <div>
-                        <a href="#aboutUs">
-                            <div>Read more</div>
-                        </a>
-                    </div>
-                    <div class="github">
-                        <a href="https://github.com/Ibrahim-1605" target="_blank">
-                            <div>Git hub</div>
-                        </a>
+            <div class="home-content">
+                <div class="image mobile-first">
+                    <img src="./assets/images/Ibrahim_s_image_square_image.jpeg" alt="Ibrahim's image"/>
+                </div>
+                <div class="introName">
+                    <h2>Hello,</h2>
+                    <h1 class="topic">I am <span>Mohamed Ibrahim</span></h1>
+                    <p>Welcome to my portfolio website. I am a fresher and aspiring data analyst passionate about turning data into insights...</p>
+                    <div class="readMore">
+                        <div>
+                            <a href="#aboutUs">
+                                <div>Read more</div>
+                            </a>
+                        </div>
+                        <div class="github">
+                            <a href="https://github.com/Ibrahim-1605" target="_blank">
+                                <div>GitHub</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="image">
-                <img src="./assets/images/Ibrahim_s_image.jpeg" alt="Ibrahim's image"/>
-            </div>
         </section>
+
         <section id="aboutUs">
-            <div class="image1"><img src="./assets/images/DSC08536-Enhanced-NR.jpg" alt="Ibrahim's Image"/></div>
-            <div class="about">
-                <h1 class="topic">About <span>Me</span></h1>
-                <p>
-                    Hello, I'm Mohamed Ibrahim from Pondicherry. After completing my 12th standard in 2023, I 
-                    decided to pursue a career in data analysis. To build a strong foundation, I learned 
-                    essential skills such as HTML, CSS, JavaScript, SQL, and Python. These technologies have helped
-                    me enhance my analytical abilities and deepen my understanding of data manipulation and visualization. 
-                    As an aspiring data analyst, I am passionate about extracting insights from data to support data-driven 
-                    decision-making. I'm eager to continue expanding my skills in data analysis and contribute effectively to
-                    any organization.
-                </p>
+            <div class="about-content">
+                <div class="image1 desktop-only">
+                    <img src="./assets/images/DSC08536-Enhanced-NR.jpg" alt="Ibrahim's Image"/>
+                </div>
+                <div class="about">
+                    <h1 class="topic">About <span>Me</span></h1>
+                    <p>
+                        Hello, I'm Mohamed Ibrahim from Pondicherry. After completing my 12th standard in 2023, I 
+                        decided to pursue a career in data analysis. To build a strong foundation, I learned 
+                        essential skills such as HTML, CSS, JavaScript, SQL, and Python. These technologies have helped
+                        me enhance my analytical abilities and deepen my understanding of data manipulation and visualization. 
+                        As an aspiring data analyst, I am passionate about extracting insights from data to support data-driven 
+                        decision-making. I'm eager to continue expanding my skills in data analysis and contribute effectively to
+                        any organization.
+                    </p>
+                </div>
             </div>
         </section>
+
         <section id="skills">
             <h1 class="topic"><span>My</span> Skills</h1>
             <div class="skillsPage">
@@ -69,7 +103,7 @@
                         <h3>Intermediate</h3>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar prgsBar" style="width: 60%;background-color: #9a77c9;">60%</div>
+                        <div class="progress-bar prgsBar" style="width: 80%;background-color: #9a77c9;">80%</div>
                     </div>
                 </div>
                 <div class="skill">
@@ -78,12 +112,12 @@
                         <h3>Intermediate</h3>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar prgsBar" style="width: 60%;background-color: #9a77c9;">60%</div>
+                        <div class="progress-bar prgsBar" style="width: 75%;background-color: #9a77c9;">75%</div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skillItem">
-                        <h3>Java Script</h3>
+                        <h3>JavaScript</h3>
                         <h3>Intermediate</h3>
                     </div>
                     <div class="progress">
@@ -96,7 +130,7 @@
                         <h3>Intermediate</h3>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar prgsBar" style="width: 60%;background-color: #9a77c9;">60%</div>
+                        <div class="progress-bar prgsBar" style="width: 85%;background-color: #9a77c9;">85%</div>
                     </div>
                 </div>
                 <div class="skill">
@@ -105,7 +139,7 @@
                         <h3>Basic</h3>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar prgsBar" style="width: 20%;background-color: #9a77c9;">20%</div>
+                        <div class="progress-bar prgsBar" style="width: 30%;background-color: #9a77c9;">30%</div>
                     </div>
                 </div>
                 <div class="skill">
@@ -114,7 +148,7 @@
                         <h3>Basic</h3>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar prgsBar" style="width: 20%;background-color: #9a77c9;">20%</div>
+                        <div class="progress-bar prgsBar" style="width: 60%;background-color: #9a77c9;">60%</div>
                     </div>
                 </div>
                 <div class="skill">
@@ -128,94 +162,34 @@
                 </div>
                 <div class="skill">
                     <div class="skillItem">
-                        <h3>Git hub</h3>
+                        <h3>GitHub</h3>
                         <h3>Intermediate</h3>
                     </div>
                     <div class="progress">
                         <div class="progress-bar prgsBar" style="width: 50%;background-color: #9a77c9;">50%</div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="skillItem">
-                        <h3>Problem Solving</h3>
-                        <h3>L5</h3>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar prgsBar" style="width: 85%;background-color: #9a77c9;">85%</div>
-                    </div>
-                </div>
+                </div>                
             </div>
         </section>
-        <section id="communication">
-            <h1 class="communication">English <span>Skills</span></h1>
-            <div class="engSkills">
-                <div class="engSkillsItem">
-                    <div><i class="fa-solid fa-headphones values"></i></div>
-                    <div><h3>Listening</h3></div>       
-                    <div class="star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                    </div>
-                    <div><p><span>Level:</span>Intermediate</p></div>
-                </div>
-                <div class="engSkillsItem">
-                    <div><i class="fa-solid fa-file-pen values"></i></div>
-                    <div><h3>Writing</h3></div>       
-                    <div class="star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                    </div>
-                    <div><p><span>Level:</span>Advanced</p></div>
-                </div>
-                <div class="engSkillsItem">
-                    <div><i class="fa-solid fa-microphone-lines values"></i></div>
-                    <div><h3>Speaking</h3></div>       
-                    <div class="star">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
-                    </div>
-                    <div><p><span>Level:</span>Intermediate</p></div>
-                </div>
-                <div class="engSkillsItem">
-                    <div><i class="fa-solid fa-book-open-reader values"></i></div>
-                    <div><h3>Reading</h3></div>       
-                    <div class="star">
-                        <i class="fa-solid  fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid  fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid  fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid  fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-solid  fa-star" style="color: #FFD43B;"></i>
-                    </div>
-                    <div><p><span>Level:</span>Advanced</p></div>
-                </div>
-            </div>
-            
+        
+        <section id="communication">           
             <h1 class="communication">Life <span>Skills</span></h1>
             <div class="lifeSkills">
                 <div class="lifeSkillsItem">
                     <div><i class="fa-solid fa-book values"></i></div>
-                    <div><h3>Adaptability & Continous learning</h3></div>       
+                    <div><h3>Adaptability & Continuous Learning</h3></div>       
                     <div class="star">
                         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                     </div>
-                    <div><p><span>Level:</span>Intermediate</p></div>
+                    <div><p><span>Level:</span> Intermediate</p></div>
                 </div>
                 <div class="lifeSkillsItem">
                     <div><i class="fa-brands fa-sellsy values"></i></div>
-                    <div><h3>Self management & Self awareness</h3></div>       
+                    <div><h3>Self Management & Self Awareness</h3></div>       
                     <div class="star">
                         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
@@ -223,7 +197,7 @@
                         <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                     </div>
-                    <div><p><span>Level:</span>Intermediate</p></div>
+                    <div><p><span>Level:</span> Intermediate</p></div>
                 </div>
                 <div class="lifeSkillsItem">
                     <div><i class="fa-solid fa-handshake values"></i></div>
@@ -235,36 +209,41 @@
                         <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                         <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                     </div>
-                    <div><p><span>Level:</span>Intermediate</p></div>
+                    <div><p><span>Level:</span> Intermediate</p></div>
                 </div>
             </div>
         </section>
+
         <section id="projects">
             <h1 class="topic"><span>My</span> Projects</h1>
             <div class="projects">
                 <div class="projectsItem">
-                    <a href="https://ibrahim-1605.github.io/Md-Ibrahim-Portfolio/"  target="_blank">
-                        <img src="./assets/images/personal_portfolio_image_1.png" alt="project-Image-1"/>
+                    <a href="https://ibrahim-1605.github.io/Md-Ibrahim-Portfolio/" target="_blank">
+                        <img src="./assets/images/personal_portfolio_image_1.png" alt="Personal Portfolio"/>
                     </a>
                     <h1><span>01</span></h1>
+                    <h3>Personal Portfolio Website</h3>
                     <p>It is my sample Portfolio website</p>
                 </div>
                 <div class="projectsItem">
-                    <a href="https://constructzone.netlify.app/"  target="_blank">
-                        <img src="./assets/images/construct_zone_image_2.png" alt="project-Image-2"/>
+                    <a href="https://constructzone.netlify.app/" target="_blank">
+                        <img src="./assets/images/construct_zone_image_2.png" alt="Construct Zone E-commerce"/>
                     </a>
                     <h1><span>02</span></h1>
+                    <h3>Construct Zone E-commerce</h3>
                     <p>It is the E-commerce website for the constructional products.</p>
                 </div>
                 <div class="projectsItem">
-                    <a href="https://ibrahim-1605.github.io/Random-Thirukural/"  target="_blank">
-                        <img src="./assets/images/random_thirukural_3.png" alt="project-Image-3"/>
+                    <a href="https://ibrahim-1605.github.io/Random-Thirukural/" target="_blank">
+                        <img src="./assets/images/random_thirukural_3.png" alt="Random Thirukural Generator"/>
                     </a>
                     <h1><span>03</span></h1>
-                    <p>It is a website that will genarate the Thirukural randomly.</p>
+                    <h3>Random Thirukural Generator</h3>
+                    <p>It is a website that will generate the Thirukural randomly.</p>
                 </div>
             </div>
         </section>
+
         <section id="contact">
             <h1 class="topic">Contact <span>Me</span></h1>
             <div class="contactDiv">
@@ -281,7 +260,7 @@
                         <h2>Social Contact</h2>
                         <ul>
                             <li>
-                                <a href="https:wa.me/+919843503076" target="_blank">
+                                <a href="https://wa.me/+919843503076" target="_blank">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -308,7 +287,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" target="_blank">
+                                <a href="#" target="_blank">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -320,30 +299,30 @@
                     </div>
                 </div>
                 <div class="contactForm">
-                    <form action="">
+                    <form action="" onsubmit="return validation(event)">
                         <h2>Email <span>Me</span></h2>
-                        <div class="form-floating mb-2 mt-2 ">
+                        <div class="form-floating mb-2 mt-2">
                             <input type="text" class="form-control" id="name" placeholder="Enter the Name" name="name"/>
                             <label for="name">Name</label>
                         </div>
-                        <div id="nameError"></div>
+                        <div id="nameError" class="error"></div>
                         <div class="form-floating mb-2 mt-2">
-                            <input type="email" class="form-control" id="name" placeholder="Enter the Email" name="email"/>
+                            <input type="email" class="form-control" id="email" placeholder="Enter the Email" name="email"/>
                             <label for="email">Email</label>
                         </div>
-                        <div id="emailError"></div>
+                        <div id="emailError" class="error"></div>
                         <div class="form-floating mb-2 mt-2">
                             <input type="text" class="form-control" id="subject" placeholder="Enter the Subject." name="subject"/>
                             <label for="subject">Subject</label>
                         </div>
-                        <div id="subjectError"></div>
+                        <div id="subjectError" class="error"></div>
                         <div class="form-floating mb-2 mt-2">
-                            <textarea class="form-control " rows="10" style="height: 100%;" id="message" name="message" placeholder="Enter the message"></textarea>
+                            <textarea class="form-control" rows="10" style="height: 100%;" id="message" name="message" placeholder="Enter the message"></textarea>
                             <label for="message">Message</label>
                         </div>
-                        <div id="messageError"></div>
+                        <div id="messageError" class="error"></div>
                         <div>
-                            <button class="button">Submit</button>
+                            <button type="submit" class="button">Submit</button>
                         </div>
                     </form> 
                 </div>
@@ -353,5 +332,7 @@
     <footer>
         <p>&copy; Ibrahim, All Rights are reserved.</p>
     </footer>
+
+    <script src="./pages/index.js"></script>
 </body>
 </html>
